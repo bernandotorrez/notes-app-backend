@@ -114,6 +114,24 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Notes by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/notes/7H0fD9_dugTAuzHI",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notes",
+						"7H0fD9_dugTAuzHI"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
