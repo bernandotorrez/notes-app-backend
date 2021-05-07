@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const { nanoid } = require('nanoid');
 const notes = require('./notes');
 
@@ -121,6 +122,15 @@ const deleteNoteByIdHandler = (request, h) => {
   return response;
 };
 
+const indexHandler = (request, h) => {
+  const response = h.response({
+    status: 'success',
+    message: 'Welcome di Notes API Bernand',
+  });
+  response.code(200);
+  return response;
+};
+
 module.exports = {
-  addNoteHandler, getAllNotesHandler, getNoteByIdHandler, editNoteByIdHandler, deleteNoteByIdHandler
+  addNoteHandler, getAllNotesHandler, getNoteByIdHandler, editNoteByIdHandler, deleteNoteByIdHandler, indexHandler,
 };
