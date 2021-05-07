@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "14b8cadc-7d58-4656-b1b1-13da8a5cb50a",
+		"name": "Notes APP Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/notes",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Notes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Naruto",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "action, shonen",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Ini adalah komik Naruto",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/notes",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Notes",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Naruto Update",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "Action, Manga",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Ini adalah komik Naruto Update",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/notes/iC_L4f4UAeicxRQUa",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notes",
+						"iC_L4f4UAeicxRQUa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Notes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/notes/iC_L4f4UAeicxRQU",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"notes",
+						"iC_L4f4UAeicxRQU"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
