@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "export NODE_ENV=production&& nodemon ./src/server.js",
-    "start-ec2": "export NODE_ENV=production&& set DEBUG=notes-app-backend:* && pm2 start ./bin/www -i 1 --name notes-app-backend",
+    "start-ec2": "export NODE_ENV=production&& set DEBUG=notes-app-backend:* && pm2 start ./src/server.js -i 1 --name notes-app-backend",
     "lint": "eslint ./src"
   },
   "keywords": [
